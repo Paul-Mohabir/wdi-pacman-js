@@ -15,8 +15,8 @@ var inky = {
 var blinky = {
   menu_option: '2',
   name: 'Blinky',
-  colour: 'Blue',
-  character: 'Shadow',
+  colour: 'Cyan',
+  character: 'Speedy',
   edible: false
 };
 
@@ -24,19 +24,20 @@ var pinky = {
   menu_option: '3',
   name: 'Pinky',
   colour: 'Pink',
-  character: 'Shadow',
+  character: 'Bashful',
   edible: false
 };
 
-var cylde = {
+var clyde = {
   menu_option: '4',
   name: 'Clyde',
-  colour: 'Yellow',
-  character: 'Shadow',
+  colour: 'Orange',
+  character: 'Pokey',
   edible: false
 };
 // replace this comment with your four ghosts setup as objects
 
+var ghosts = [inky, blinky, pinky, clyde];
 
 // Draw the screen functionality
 function drawScreen() {
@@ -60,6 +61,10 @@ function displayMenu() {
   console.log('\n\nSelect Option:\n');  // each \n creates a new line
   console.log('(d) Eat Dot');
   console.log('(q) Quit');
+  console.log('(1) Eat Inky')
+  console.log('(2) Eat Blinky')
+  console.log('(3) Eat Pinky')
+  console.log('(4) Eat Clyde')
 }
 
 function displayPrompt() {
@@ -73,7 +78,10 @@ function eatDot() {
   console.log('\nChomp!');
   score += 10;
 }
-
+// function eatInky() {
+//   console.log('\nChomp!')
+//   score += 100;
+// }
 
 // Process Player's Input
 function processInput(key) {
@@ -85,7 +93,7 @@ function processInput(key) {
     case 'd':
       eatDot();
       break;
-    default:
+      default:
       console.log('\nInvalid Command!');
   }
 }
