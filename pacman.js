@@ -78,11 +78,12 @@ function eatDot() {
   console.log('\nChomp!');
   score += 10;
 }
-// function eatInky() {
-//   console.log('\nChomp!')
-//   score += 100;
-// }
-
+function eatGhosts() {
+  if (ghosts.edible === false) {
+  console.log('\nAte a ghost!');
+  lives --
+}
+}
 // Process Player's Input
 function processInput(key) {
   switch(key) {
@@ -97,7 +98,12 @@ function processInput(key) {
       console.log('\nInvalid Command!');
   }
 }
-
+//If there are 0 lives left then there is a game Over
+function gameOver(){
+  if (lives == 0)
+  console.log('\n Errewererwererrrr Game Over')
+  process.exit();
+}
 
 //
 // YOU PROBABLY DON'T WANT TO CHANGE CODE BELOW THIS LINE
