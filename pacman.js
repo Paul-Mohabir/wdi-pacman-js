@@ -13,28 +13,28 @@ var inky = {
 };
 
 var blinky = {
-  menu_option: '2'
-  name: 'Blinky'
-  colour: 'Blue'
-  character: 'Shadow'
+  menu_option: '2',
+  name: 'Blinky',
+  colour: 'Blue',
+  character: 'Shadow',
   edible: false
-}
+};
 
 var pinky = {
-  menu_option: '2'
-  name: 'Pinky'
-  colour: 'Pink'
-  character: 'Shadow'
+  menu_option: '3',
+  name: 'Pinky',
+  colour: 'Pink',
+  character: 'Shadow',
   edible: false
-}
+};
 
 var cylde = {
-  menu_option: '2'
-  name: 'Clyde'
-  colour: 'Yellow'
-  character: 'Shadow'
+  menu_option: '4',
+  name: 'Clyde',
+  colour: 'Yellow',
+  character: 'Shadow',
   edible: false
-}
+};
 // replace this comment with your four ghosts setup as objects
 
 
