@@ -81,11 +81,29 @@ function eatDot() {
   score += 10;
 }
 function eatGhosts() {
-  if (ghosts.edible === false) {
+  if (ghosts.edible == false) {
   console.log('\nAte a ghost!');
   lives --
+}//end the condition of ghosts = false
+  else {ghosts.edible = true}
+  score += 200;
 }
-}
+
+
+function eatPowerPellets() {
+  if (powerPellets == 0 ){
+  console.log('\n You already ate all the pellets');
+} // close first condition
+  else {powerPellets --;
+     score += 50;
+     ghosts.forEach(function(ghost){ghost.edible =true})
+   }//else ends here
+  }//en the function power pellets
+
+
+
+
+
 // Process Player's Input
 function processInput(key) {
   switch(key) {
@@ -96,6 +114,10 @@ function processInput(key) {
     case 'd':
       eatDot();
       break;
+      case 'p':
+      eatPowerPellets();
+      break;
+
       default:
       console.log('\nInvalid Command!');
   }
