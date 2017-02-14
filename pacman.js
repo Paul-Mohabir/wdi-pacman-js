@@ -85,7 +85,7 @@ function eatGhosts() {
   console.log('\nAte a ghost!');
   lives --
 }//end the condition of ghosts = false
-  else {ghosts.edible = true}
+  else {ghosts.edible == true}
   score += 200;
 }
 
@@ -101,9 +101,6 @@ function eatPowerPellets() {
   }//en the function power pellets
 
 
-
-
-
 // Process Player's Input
 function processInput(key) {
   switch(key) {
@@ -117,7 +114,18 @@ function processInput(key) {
       case 'p':
       eatPowerPellets();
       break;
-
+      case '1':
+      eatInky();
+      break;
+      case '2':
+      eatBlinky();
+      break;
+      case '3':
+      eatPinky();
+      break;
+      case '4':
+      eatClyde();
+      break;
       default:
       console.log('\nInvalid Command!');
   }
